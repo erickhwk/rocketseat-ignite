@@ -98,6 +98,18 @@ padding: 2.5rem;
   line-height: 1.4;
 }
 
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none;
+}
+
 .commentForm button {
   padding: 1rem 1.5rem;
   background: var(--green-500);
@@ -109,11 +121,12 @@ padding: 2.5rem;
   cursor: pointer;
 
   transition: background-color 0.2s;
-
-  visibility: hidden;
-
 }
 
 .commentForm button:hover {
   background: var(--green-300);
+}
+
+.commentList {
+  margin-top: 2rem;
 }
