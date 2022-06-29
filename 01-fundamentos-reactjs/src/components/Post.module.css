@@ -130,3 +130,22 @@ padding: 2.5rem;
 .commentList {
   margin-top: 2rem;
 }
+
+.likeCount {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  color: var(--gray-400);
+  align-items: center;
+}
+
+.likeCount button {
+  background-color: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+}
+
+.likeCount button:hover {
+  color: var(--green-300);
+}

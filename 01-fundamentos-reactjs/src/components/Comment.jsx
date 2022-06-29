@@ -11,7 +11,7 @@ export function Comment() {
           <header>
             <div className={styles.commentAuthor}>
               <strong>Erick Valente</strong>
-              <time title="27 de Junho às 17:38" dateTime="2022-06-27 17:38:30">Publicado há 5 minutos</time>
+              <time title="27 de Junho às 17:38" dateTime="2022-06-27 17:38:30">Há 5 minutos</time>
             </div>
 
             <button title="Deletar comentário">
@@ -24,9 +24,8 @@ export function Comment() {
 
         <footer>
           <span>20</span>
+          <button title="Curtir">
           <ThumbsUp size={20} />
-          <button title="Aplaudir">
-            Aplaudir
           </button>
         </footer>
       </div>

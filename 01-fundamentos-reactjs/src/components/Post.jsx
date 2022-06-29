@@ -1,3 +1,4 @@
+import { ThumbsUp } from "phosphor-react"
 import { Comment } from "./Comment"
 import styles from "./Post.module.css"
 
@@ -28,8 +29,14 @@ export function Post() {
           </ul>
         </p>
       </div>
+      <div className={styles.likeCount}>
+          <span>12</span>
+          <button title="Curtir">
+          <ThumbsUp size={20} />
+          </button>
+        </div>
       <form className={styles.commentForm}>
-        <strong>Deixe seu feedback</strong>
+        <strong>Deixe seu comentário</strong>
         <textarea
           placeholder="Deixe um comentário"
           />
