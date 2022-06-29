@@ -1,4 +1,5 @@
 import { ThumbsUp } from "phosphor-react"
+import { Avatar } from "./Avatar"
 import { Comment } from "./Comment"
 import styles from "./Post.module.css"
 
@@ -7,7 +8,7 @@ export function Post() {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src="https://github.com/erickhwk.png" />
+          <Avatar src='https://github.com/erickhwk.png' />
           <div className={styles.authorInfo}>
             <strong>Erick Valente</strong>
             <span>Web Developer</span>
@@ -36,7 +37,7 @@ export function Post() {
           </button>
         </div>
       <form className={styles.commentForm}>
-        <strong>Deixe seu comentário</strong>
+        <strong>Deixe seu comentário:</strong>
         <textarea
           placeholder="Deixe um comentário"
           />
